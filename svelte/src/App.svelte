@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let name: string;
 	import Counter from './Counter.svelte';
-  const p = {count: 20000,}
+  const p = {count: 20000, isHello: true}
 </script>
 
 <main>

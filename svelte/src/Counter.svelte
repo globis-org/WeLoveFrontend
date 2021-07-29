@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let count = 0;
+  export let isHello = true
 	export const onDecreaseClick = () => (count -= 1)
   const onIncreaseClick = () => (count += 1)
 </script>
@@ -16,4 +17,7 @@
 	<button on:click={onIncreaseClick} aria-label="Increase the counter by one">
 		+1
 	</button>
+  {#if isHello && count%2 === 0}
+    <p>Hello svelte logic</p>
+  {/if}
 </div>
