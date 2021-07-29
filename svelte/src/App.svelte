@@ -1,7 +1,15 @@
 <script lang="ts">
 	export let name: string;
 	import Counter from './Counter.svelte';
-  const p = {count: 20000, isHello: true}
+  const p = {
+		count: 20000,
+		isHello: true,
+		cats: [
+			{ id: 'J---aiyznGQ', name: 'Keyboard Cat' },
+			{ id: 'z_AbfPXTKms', name: 'Maru' },
+			{ id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }
+		]
+	}
 </script>
 
 <main>
