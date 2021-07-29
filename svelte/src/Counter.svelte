@@ -1,7 +1,6 @@
 <script lang="ts">
-	let count = 0;
-
-	const onDecreaseClick = () => (count -= 1)
+	export let count = 0;
+	export const onDecreaseClick = () => (count -= 1)
   const onIncreaseClick = () => (count += 1)
 </script>
 
